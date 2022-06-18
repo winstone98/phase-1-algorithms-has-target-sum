@@ -1,13 +1,26 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+ // Write your algorithm here
+  for (i = 0; i < (array.length - 1); i++) {
+    for (j = (i + 1); j < array.length; j++) {
+      if (array[i] + array[j] == target) {
+                return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
+
+
 */
 
 /* 
   Add your pseudocode here
+  loop through the given array in a section pair
+  get sum of the given pairs and equate to target.
+
 */
 
 /*
